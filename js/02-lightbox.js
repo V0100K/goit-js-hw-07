@@ -7,9 +7,9 @@ const markUp = galleryItems
   .map(
     (image) =>
       `
-        <a class="gallery__item" href="${image.original}">
+        <li class='gallery_itm'><a class="gallery__item" href="${image.original}">
             <img class="gallery__image" src="${image.preview}" alt="${image.description}" />
-        </a>
+        </a></li>
         `
   )
   .join("");
